@@ -1,0 +1,36 @@
+﻿2015/05/07 17:57:41 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\riku\Downloads\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet.vcxproj" (Build ターゲット)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\soft\library\bullet\bullet-2.82-r2704\src" /I"D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\RIKU\soft\library\bullet-2.82-r2704\src" /I"D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\soft\library\bullet-2.82-r2704\src" /IC:\Users\riku\soft\library\bullet\src /I"C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Stage.cpp
+         Stage.cpp
+     1>c:\users\riku\downloads\dxlib_bullet\dxlib_bullet\stage.cpp(13): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\riku\downloads\dxlib_bullet\dxlib_bullet\stage.cpp(20): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+     1>c:\users\riku\downloads\dxlib_bullet\dxlib_bullet\stage.cpp(48): warning C4018: '<' : signed と unsigned の数値を比較しようとしました。
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\riku\Downloads\DxLib_Bullet\Debug\DxLib_Bullet.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\riku\soft\library\bullet\builded\lib\Debug /LIBPATH:"C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:D:\soft\library\bullet\build\lib /LIBPATH:"D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\RIKU\soft\library\bullet-2.82-r2704\lib\Debug_2010" /LIBPATH:"D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\soft\library\bullet-2.82-r2704\bullet_make\lib\vs2012\Debug" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\riku\Downloads\DxLib_Bullet\Debug\DxLib_Bullet.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\riku\Downloads\DxLib_Bullet\Debug\DxLib_Bullet.lib" /MACHINE:X86 Debug\abstractObject.obj
+         Debug\AbstractWorld.obj
+         Debug\Ball.obj
+         Debug\BorerControl.obj
+         Debug\camera.obj
+         Debug\Character.obj
+         Debug\dxDebugDraw.obj
+         Debug\GameScene.obj
+         Debug\Ground.obj
+         Debug\KeyEvent.obj
+         Debug\MouseEvent.obj
+         Debug\SceneContext.obj
+         Debug\Stage.obj
+         Debug\StageCreater.obj
+         Debug\StageFactory.obj
+         Debug\StartScene.obj
+         Debug\System.obj
+         Debug\test.obj
+         Debug\abstractWorldCreater.obj
+         Debug\worldObject.obj
+         Debug\BulletWorld.obj
+         DxLib_Bullet.vcxproj -> C:\Users\riku\Downloads\DxLib_Bullet\Debug\DxLib_Bullet.exe
+     1>プロジェクト "C:\Users\riku\Downloads\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet.vcxproj" (Build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:01.26

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\System">
+      <UniqueIdentifier>{ec3fcb66-eb78-44d6-8a7f-fb08dc239982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Interface">
+      <UniqueIdentifier>{185004c6-96e5-401a-b31d-f7d6c603ae65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\System\Listener">
+      <UniqueIdentifier>{96047d94-a412-48f7-9b09-a8a45f2b3f7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{9211a12b-a509-45a3-a483-4031a38525d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene">
+      <UniqueIdentifier>{f676ffd0-f931-4c3a-b43a-7a5cdb3e0338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene\World">
+      <UniqueIdentifier>{0d0805d3-4d7e-40f0-a120-58b874bffcc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene\Bullet">
+      <UniqueIdentifier>{55fc7838-8d61-45e4-85f1-7b756ed57738}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene\Bullet\Debug">
+      <UniqueIdentifier>{ab3667b4-26e9-4737-acf8-354487e0f5c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene\Bullet\include">
+      <UniqueIdentifier>{560c64b2-1a67-4981-a2da-a1ea70475059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene\World\Object">
+      <UniqueIdentifier>{0ec59281-e956-47b7-b865-e73e87606403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\StartScene">
+      <UniqueIdentifier>{d8a99e1a-cb7a-409c-9114-f9aae3afd5d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene\World\Object\char">
+      <UniqueIdentifier>{c21c4971-f6c8-45e9-b125-a4cc66bddb91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\GameScene\World\Stage">
+      <UniqueIdentifier>{55001d33-9c0e-4c15-8b3e-64427cddea67}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dxDebugDraw.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\Bullet\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="BulletWorld.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object\char</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="bullet.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object\char</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyEvent.cpp">
+      <Filter>ソース ファイル\System\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="System.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseEvent.cpp">
+      <Filter>ソース ファイル\System\Listener</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneContext.cpp">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="BorerControl.cpp">
+      <Filter>ソース ファイル\System</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScene.cpp">
+      <Filter>ソース ファイル\Scene\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="StartScene.cpp">
+      <Filter>ソース ファイル\Scene\StartScene</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractWorld.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World</Filter>
+    </ClCompile>
+    <ClCompile Include="abstractObject.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="worldObject.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Stage.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageCreater.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="StageFactory.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="abstractWorldCreater.cpp">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BulletInclude.h">
+      <Filter>ソース ファイル\Scene\GameScene\Bullet\include</Filter>
+    </ClInclude>
+    <ClInclude Include="dxDebugDraw.h">
+      <Filter>ソース ファイル\Scene\GameScene\Bullet\Debug</Filter>
+    </ClInclude>
+    <ClInclude Include="BulletWorld.h">
+      <Filter>ソース ファイル\Scene\GameScene\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object\char</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object\char</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyboardListener.h">
+      <Filter>ソース ファイル\System\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyEvent.h">
+      <Filter>ソース ファイル\System\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="System.h">
+      <Filter>ソース ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="IRun.h">
+      <Filter>ソース ファイル\System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseListener.h">
+      <Filter>ソース ファイル\System\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseEvent.h">
+      <Filter>ソース ファイル\System\Listener</Filter>
+    </ClInclude>
+    <ClInclude Include="abstractScene.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneContext.h">
+      <Filter>ソース ファイル\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="BorerControl.h">
+      <Filter>ソース ファイル\System</Filter>
+    </ClInclude>
+    <ClInclude Include="IDespose.h">
+      <Filter>ソース ファイル\System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScene.h">
+      <Filter>ソース ファイル\Scene\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="StartScene.h">
+      <Filter>ソース ファイル\Scene\StartScene</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractWorld.h">
+      <Filter>ソース ファイル\Scene\GameScene\World</Filter>
+    </ClInclude>
+    <ClInclude Include="abstractObject.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="worldObject.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Stage.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageCreater.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="StageFactory.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="IDraw.h">
+      <Filter>ソース ファイル\System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="abstractWorldCreater.h">
+      <Filter>ソース ファイル\Scene\GameScene\World\Stage</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

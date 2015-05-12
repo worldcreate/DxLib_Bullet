@@ -1,0 +1,147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FACFF150-C284-4FBF-954F-8C82730345A3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>DxLib_Bullet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\soft\library\bullet\bullet-2.82-r2704\src;D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\RIKU\soft\library\bullet-2.82-r2704\src;D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\soft\library\bullet-2.82-r2704\src;C:\Users\riku\soft\library\bullet\src;C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\riku\soft\library\bullet\builded\lib\Debug;C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\soft\library\bullet\build\lib;D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\RIKU\soft\library\bullet-2.82-r2704\lib\Debug_2010;D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\soft\library\bullet-2.82-r2704\bullet_make\lib\vs2012\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;C:\Users\riku\soft\library\bullet\src;D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\soft\library\bullet\bullet-2.82-r2704\src;D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\RIKU\soft\library\bullet-2.82-r2704\src;D:\soft\library\bullet-2.82-r2704\src;D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;C:\Users\riku\soft\library\bullet\builded\lib\Release;D:\soft\library\bullet\build\lib;D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用;D:\RIKU\soft\library\bullet-2.82-r2704\lib\Debug_2010;D:\soft\library\bullet-2.82-r2704\bullet_make\lib\vs2012\Release;D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="abstractObject.cpp" />
+    <ClCompile Include="AbstractWorld.cpp" />
+    <ClCompile Include="Ball.cpp" />
+    <ClCompile Include="BorerControl.cpp" />
+    <ClCompile Include="BulletWorld.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="camera.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="dxDebugDraw.cpp" />
+    <ClCompile Include="GameScene.cpp" />
+    <ClCompile Include="Ground.cpp" />
+    <ClCompile Include="KeyEvent.cpp" />
+    <ClCompile Include="main.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="MouseEvent.cpp" />
+    <ClCompile Include="SceneContext.cpp" />
+    <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="StageCreater.cpp" />
+    <ClCompile Include="StageFactory.cpp" />
+    <ClCompile Include="StartScene.cpp" />
+    <ClCompile Include="System.cpp" />
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="abstractWorldCreater.cpp" />
+    <ClCompile Include="worldObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abstractObject.h" />
+    <ClInclude Include="abstractScene.h" />
+    <ClInclude Include="AbstractWorld.h" />
+    <ClInclude Include="Ball.h" />
+    <ClInclude Include="BorerControl.h" />
+    <ClInclude Include="BulletInclude.h" />
+    <ClInclude Include="BulletWorld.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="dxDebugDraw.h" />
+    <ClInclude Include="GameScene.h" />
+    <ClInclude Include="Ground.h" />
+    <ClInclude Include="IDespose.h" />
+    <ClInclude Include="IDraw.h" />
+    <ClInclude Include="IRun.h" />
+    <ClInclude Include="IUpdate.h" />
+    <ClInclude Include="KeyboardListener.h" />
+    <ClInclude Include="KeyEvent.h" />
+    <ClInclude Include="MouseEvent.h" />
+    <ClInclude Include="MouseListener.h" />
+    <ClInclude Include="SceneContext.h" />
+    <ClInclude Include="Stage.h" />
+    <ClInclude Include="StageCreater.h" />
+    <ClInclude Include="StageFactory.h" />
+    <ClInclude Include="StartScene.h" />
+    <ClInclude Include="System.h" />
+    <ClInclude Include="abstractWorldCreater.h" />
+    <ClInclude Include="worldObject.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
