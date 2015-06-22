@@ -4,9 +4,9 @@
 
 Stage::Stage(BulletWorld* obj){
 	setBulletWorld(obj);
-	stageHandle = MV1LoadModel("model\\ネオＵＫシティ.x");
+	stageHandle = MV1LoadModel("model\\stage\\ネオＵＫシティ.x");
 
-	bWorld->setObject(new stageObject(getShape(stageHandle)));
+	bWorld->setObject(new stageObject(BulletWorld::converToBtBvhTriangleMeshShapeFromDxModel(stageHandle,triangleMesh)));
 }
 
 void Stage::Draw(){
@@ -21,26 +21,6 @@ void Stage::Update(){
 		worldObjectList[i]->Update();
 	}
 	bWorld->loop();
-}
-
-btBvhTriangleMeshShape* Stage::getShape(int modelHandle){
-	//参照用メッシュの構築
-	triangleMesh = new btTriangleMesh;
-	MV1SetupReferenceMesh(stageHandle, -1, TRUE);
-	MV1_REF_POLYGONLIST refMesh = MV1GetReferenceMesh(stageHandle, -1, TRUE);
-
-	for (int i = 0; i < refMesh.PolygonNum; i++){
-		btVector3 vertex[3];
-		for (int j = 0; j < 3; j++){
-			vertex[j] = btVector3(
-				refMesh.Vertexs[refMesh.Polygons[i].VIndex[j]].Position.x,
-				refMesh.Vertexs[refMesh.Polygons[i].VIndex[j]].Position.y,
-				-(refMesh.Vertexs[refMesh.Polygons[i].VIndex[j]].Position.z)
-				);
-		}
-		triangleMesh->addTriangle(vertex[0], vertex[1], vertex[2], false);
-	}
-	return new btBvhTriangleMeshShape(triangleMesh, true, true);
 }
 
 Stage::~Stage(void)

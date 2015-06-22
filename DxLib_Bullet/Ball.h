@@ -10,7 +10,6 @@ public:
 	~Ball();
 private:
 	int radius;
-
 	int cnt;
 };
 

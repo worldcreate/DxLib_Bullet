@@ -5,6 +5,7 @@
 #include "Ground.h"
 #include "camera.h"
 #include "BorerControl.h"
+#include "Character.h"
 
 StageCreater::StageCreater(void)
 {
@@ -37,6 +38,7 @@ StageCreater::StageCreater(void)
 	s->setObject(b = new Ball());
 	b->setPos(btVector3(58, -75, 0));
 	
+	s->setObject(new Character());
 }
 
 

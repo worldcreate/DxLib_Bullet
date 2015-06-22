@@ -19,6 +19,7 @@ public:
 	void setObject(abstractObject *);
 	void deleteObject(abstractObject *);
 	static VECTOR rotateVec(VECTOR &,btQuaternion&);
+	static btBvhTriangleMeshShape* converToBtBvhTriangleMeshShapeFromDxModel(int,btTriangleMesh*&);
 private:
 	btDiscreteDynamicsWorld* dynamicsWorld;
 	btAlignedObjectArray<btCollisionShape*> collisionShapes;

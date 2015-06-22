@@ -14,7 +14,6 @@ private:
 	int stageHandle;
 	btCollisionShape* collisionShape;
 	btTriangleMesh* triangleMesh;
-	btBvhTriangleMeshShape* getShape(int);
 
 	class stageObject:public abstractObject{
 	public:

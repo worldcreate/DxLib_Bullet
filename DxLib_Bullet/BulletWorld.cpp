@@ -164,6 +164,26 @@ VECTOR BulletWorld::rotateVec(VECTOR &vec, btQuaternion &quat){
 	return dst;
 };
 
+btBvhTriangleMeshShape* BulletWorld::converToBtBvhTriangleMeshShapeFromDxModel(int modelHandle,btTriangleMesh*& triangleMesh){
+	//参照用メッシュの構築
+	triangleMesh = new btTriangleMesh;
+	MV1SetupReferenceMesh(modelHandle, -1, TRUE);
+	MV1_REF_POLYGONLIST refMesh = MV1GetReferenceMesh(modelHandle, -1, TRUE);
+
+	for (int i = 0; i < refMesh.PolygonNum; i++){
+		btVector3 vertex[3];
+		for (int j = 0; j < 3; j++){
+			vertex[j] = btVector3(
+				refMesh.Vertexs[refMesh.Polygons[i].VIndex[j]].Position.x,
+				refMesh.Vertexs[refMesh.Polygons[i].VIndex[j]].Position.y,
+				-(refMesh.Vertexs[refMesh.Polygons[i].VIndex[j]].Position.z)
+				);
+		}
+		triangleMesh->addTriangle(vertex[0], vertex[1], vertex[2], false);
+	}
+	return new btBvhTriangleMeshShape(triangleMesh, true, true);
+}
+
 BulletWorld::~BulletWorld(){
 	for(int i=dynamicsWorld->getNumCollisionObjects()-1;i>=0;i--){
 		btCollisionObject* obj=dynamicsWorld->getCollisionObjectArray()[i];
