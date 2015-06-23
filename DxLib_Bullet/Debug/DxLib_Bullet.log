@@ -1,10 +1,12 @@
-﻿2015/06/22 18:46:34 にビルドを開始しました。
-     1>ノード 2 上のプロジェクト "D:\program\skydrive\ドキュメント\program\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet.vcxproj" (Build ターゲット)。
+﻿2015/06/23 18:13:51 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\cygwin64\home\riku\program\git\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet.vcxproj" (Build ターゲット)。
      1>ClCompile:
-         D:\soft\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I"D:\soft\library\bullet\bullet-2.82-r2704\src" /I"D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\RIKU\soft\library\bullet-2.82-r2704\src" /I"D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\soft\library\bullet-2.82-r2704\src" /IC:\Users\riku\soft\library\bullet\src /I"C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Character.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"D:\soft\library\bullet\bullet-2.82-r2704\src" /I"D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\RIKU\soft\library\bullet-2.82-r2704\src" /I"D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /I"D:\soft\library\bullet-2.82-r2704\src" /IC:\Users\riku\soft\library\bullet\src /I"C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Character.cpp
          Character.cpp
+     1>c:\cygwin64\home\riku\program\git\dxlib_bullet\dxlib_bullet\dxlib_bullet\character.cpp(7): warning C4305: '引数' : 'double' から 'float' へ切り詰めます。
+     1>c:\cygwin64\home\riku\program\git\dxlib_bullet\dxlib_bullet\dxlib_bullet\character.cpp(21): warning C4305: '+=' : 'double' から 'float' へ切り詰めます。
        Link:
-         D:\soft\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\program\skydrive\ドキュメント\program\DxLib_Bullet\Debug\DxLib_Bullet.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\riku\soft\library\bullet\builded\lib\Debug /LIBPATH:"C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:D:\soft\library\bullet\build\lib /LIBPATH:"D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\RIKU\soft\library\bullet-2.82-r2704\lib\Debug_2010" /LIBPATH:"D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\soft\library\bullet-2.82-r2704\bullet_make\lib\vs2012\Debug" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\program\skydrive\ドキュメント\program\DxLib_Bullet\Debug\DxLib_Bullet.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\program\skydrive\ドキュメント\program\DxLib_Bullet\Debug\DxLib_Bullet.lib" /MACHINE:X86 Debug\abstractObject.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\cygwin64\home\riku\program\git\DxLib_Bullet\DxLib_Bullet\Debug\DxLib_Bullet.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\riku\soft\library\bullet\builded\lib\Debug /LIBPATH:"C:\Users\riku\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:D:\soft\library\bullet\build\lib /LIBPATH:"D:\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\soft\library\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\RIKU\soft\library\bullet-2.82-r2704\lib\Debug_2010" /LIBPATH:"D:\RIKU\soft\library\dxlib\DxLib_VC\プロジェクトに追加すべきファイル_VC用" /LIBPATH:"D:\soft\library\bullet-2.82-r2704\bullet_make\lib\vs2012\Debug" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\cygwin64\home\riku\program\git\DxLib_Bullet\DxLib_Bullet\Debug\DxLib_Bullet.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\cygwin64\home\riku\program\git\DxLib_Bullet\DxLib_Bullet\Debug\DxLib_Bullet.lib" /MACHINE:X86 Debug\abstractObject.obj
          Debug\AbstractWorld.obj
          Debug\Ball.obj
          Debug\BorerControl.obj
@@ -25,9 +27,9 @@
          Debug\abstractWorldCreater.obj
          Debug\worldObject.obj
          Debug\BulletWorld.obj
-         DxLib_Bullet.vcxproj -> D:\program\skydrive\ドキュメント\program\DxLib_Bullet\Debug\DxLib_Bullet.exe
-     1>プロジェクト "D:\program\skydrive\ドキュメント\program\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet.vcxproj" (Build ターゲット) のビルドが完了しました。
+         DxLib_Bullet.vcxproj -> C:\cygwin64\home\riku\program\git\DxLib_Bullet\DxLib_Bullet\Debug\DxLib_Bullet.exe
+     1>プロジェクト "C:\cygwin64\home\riku\program\git\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet\DxLib_Bullet.vcxproj" (Build ターゲット) のビルドが完了しました。
 
 ビルドに成功しました。
 
-経過時間 00:00:03.88
+経過時間 00:00:02.16

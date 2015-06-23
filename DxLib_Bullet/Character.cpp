@@ -3,22 +3,11 @@
 #include "BulletWorld.h"
 
 Character::Character(){
-	m_playerHandle=MV1LoadModel("model\\char\\miku\\Lat式ミクVer2.31_Normal.pmd");
-	collisionShape=BulletWorld::convertBulletCollisionShapeFromDXLIBModel(m_playerHandle,m_triangleMesh);
-
-	btTransform playerTransform;
-	playerTransform.setIdentity();
-	playerTransform.setOrigin(btVector3(0, 5, 0));
-
-	btScalar mass(3.0);
-
-	bool isDynamic = (mass != 0.f);
-
-	btVector3 localInertia(0, 5, 0);
-
-	btDefaultMotionState* myMotionState = new btDefaultMotionState(playerTransform);
-	btRigidBody::btRigidBodyConstructionInfo rbInfo(mass, myMotionState, collisionShape, localInertia);
-	rigidBody = new btRigidBody(rbInfo);
+	m_playerHandle=MV1LoadModel("model\\char\\miku\\Lat式ミクVer2.31_Sailor冬服.pmd");
+	MV1SetScale(m_playerHandle, VGet(0.2, 0.2, 0.2));
+	m_animeIndex = MV1AttachAnim(m_playerHandle, 1, -1, FALSE);
+	m_animeTotalTime = MV1GetAttachAnimTotalTime(m_playerHandle, m_animeIndex);
+	m_animePlayTime = 0;
 }
 
 void Character::Draw(){
@@ -27,6 +16,10 @@ void Character::Draw(){
 
 void Character::Update(){
 	MV1SetPosition(m_playerHandle,VGet(0,0,0));
+	MV1SetAttachAnimTime(m_playerHandle, m_animeIndex, m_animePlayTime);
+	if (m_animePlayTime <= m_animeTotalTime){
+		m_animePlayTime += 0.2;
+	}
 }
 
 

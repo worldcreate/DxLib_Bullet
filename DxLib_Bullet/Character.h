@@ -11,5 +11,8 @@ public:
 private:
 	int m_playerHandle;
 	btTriangleMesh* m_triangleMesh;
+	int m_animeIndex;
+	float m_animeTotalTime;
+	float m_animePlayTime;
 };
 

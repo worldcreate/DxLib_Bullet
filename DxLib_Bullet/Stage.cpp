@@ -5,6 +5,7 @@
 Stage::Stage(BulletWorld* obj){
 	setBulletWorld(obj);
 	stageHandle = MV1LoadModel("model\\stage\\ネオＵＫシティ.x");
+	MV1SetScale(stageHandle, VGet(2, 2, 2));
 
 	bWorld->setObject(new stageObject(BulletWorld::converToBtBvhTriangleMeshShapeFromDxModel(stageHandle,triangleMesh)));
 }
